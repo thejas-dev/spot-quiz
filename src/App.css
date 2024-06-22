@@ -1,38 +1,135 @@
-.App {
+.title{
+  font-size: 40;
+  color:blue;
+  margin: 0;
+  text-shadow: 0px 4px 17px blue;
+  font-family: 'Verdana';
   text-align: center;
+  padding-top: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.description{
+  text-align: center;
+  color:gray;
+  font-size: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.diff-level-container{
+  margin-top: 55px;
+  display: flex;
+  gap:20px;
+  width:100%;
+  justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.diff-btn{
+  cursor: pointer;
+  color:white;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 15px 30px;
+  border:1.4px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.diff-btn:hover{
+  border:1.4px solid blue;
+}
+
+.lang-container{
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  gap:30px;
+  margin: auto;
+  margin-top: 60px;
+
+}
+
+.image{
+  width: 70px; 
+}
+
+.lang-box{
+  border: 1.3px solid lightgray;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 30px 35px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lang-box:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: blue;
+  scale: 105%;
+}
+
+.lang-box > p{
+  margin: 0;
+  margin-top: 20px;
   color: white;
+  font-family: Verdana;
+  font-weight: 500;
 }
 
-.App-link {
-  color: #61dafb;
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #FFF;
+  border-bottom-color: blue;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes rotation {
+  0% {
+      transform: rotate(0deg);
   }
-  to {
-    transform: rotate(360deg);
+  100% {
+      transform: rotate(360deg);
   }
+} 
+
+.question{
+  padding: 0;
+  margin: 0;
+  color:white;
+  padding: 40px 60px;
+  font-size: 25px;
+}
+
+.opt-container{
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+  color:white;
+  gap:50px;
+}
+
+.option{
+  font-size: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap:20px;
+  cursor: pointer;
+}
+
+.option > p{
+  padding: 0;
+  margin: 0;
+}
+
+.round-button{
+  height: 15px;
+  width: 15px;
+  padding: 2px;
+  border-radius: 50%;
+  background-color: white;
 }
